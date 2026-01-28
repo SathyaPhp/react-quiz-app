@@ -1,20 +1,108 @@
-<<<<<<< HEAD
-# React + Vite
+# React Quiz App 🧠⚛️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive **React Quiz Application** built using **React Hooks** and **React-Bootstrap**.  
+Users can answer multiple-choice questions, navigate through them, and view their final score at the end.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- Multiple-choice quiz questions
+- One answer allowed per question
+- Instant answer validation (correct / wrong highlight)
+- Score tracking
+- Final score summary after completion
+- Responsive UI using React-Bootstrap
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# react-quiz-app
->>>>>>> 504a0f736809634747cecaa5f0db2ae58db5b629
+- React (useState Hook)
+- React-Bootstrap
+- JavaScript (ES6)
+- CSS
+
+---
+
+## 📂 Project Structure
+
+react-quiz-app/
+│
+├── src/
+│ ├── data/
+│ │ └── question.js
+│ ├── App.jsx
+│ ├── App.css
+│ └── main.jsx
+│
+├── public/
+├── package.json
+└── README.md
+
+
+---
+
+## 📊 How It Works
+
+1. Questions are loaded from `data/question.js`
+2. User selects an option
+   - Correct answer → highlighted in **green**
+   - Wrong answer → highlighted in **red**
+3. User clicks **Next** to move to the next question
+4. Each question can be answered only once
+5. After completing all questions, the final score is displayed
+
+---
+
+## ▶️ Getting Started
+
+### 1️⃣ Clone the Repository
+
+git clone https://github.com/SathyaPhp/react-quiz-app.git
+
+2️⃣ Navigate to the Project
+cd react-quiz-app
+
+3️⃣ Install Dependencies
+npm install
+
+4️⃣ Start the Development Server
+npm run dev
+
+
+The app will run on:
+
+http://localhost:5173
+
+🧪 Sample Question Format
+export default [
+  {
+    question: "What is React?",
+    options: ["Library", "Framework", "Language", "Database"],
+    answer: "Library",
+  }
+];
+
+📌 Future Improvements
+
+Add timer per question
+
+Add restart quiz option
+
+Show correct answer when user selects wrong option
+
+Store score history
+
+Mobile-first UI improvements
+
+👨‍💻 Author
+
+Sathya Murugan
+React Developer (3+ years experience)
+
+GitHub: https://github.com/SathyaPhp
+
+📜 License
+
+This project is open-source and free to use.
